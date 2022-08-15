@@ -7,6 +7,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { NavComponent } from './components/shared/nav/nav.component';
 import { FiltersComponent } from './components/shared/bookstore-app/filters/filters.component';
 import { ProductListComponent } from './components/shared/bookstore-app/product-list/product-list.component';
+import { BookstoreAppComponent } from './components/shared/bookstore-app/bookstore-app.component';
+import { ProductItemComponent } from './components/shared/bookstore-app/product-list/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ProductListComponent } from './components/shared/bookstore-app/product-
     FooterComponent,
     NavComponent,
     FiltersComponent,
-    ProductListComponent
+    ProductListComponent,
+    BookstoreAppComponent,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule
