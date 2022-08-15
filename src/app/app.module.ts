@@ -9,6 +9,8 @@ import { FiltersComponent } from './components/shared/bookstore-app/filters/filt
 import { ProductListComponent } from './components/shared/bookstore-app/product-list/product-list.component';
 import { BookstoreAppComponent } from './components/shared/bookstore-app/bookstore-app.component';
 import { ProductItemComponent } from './components/shared/bookstore-app/product-list/product-item/product-item.component';
+import { BooksService } from './components/shared/bookstore-app/product-list/product-list.component.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,10 @@ import { ProductItemComponent } from './components/shared/bookstore-app/product-
     ProductItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [BooksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
